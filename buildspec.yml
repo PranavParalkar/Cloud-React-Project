@@ -2,8 +2,11 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 20
     commands:
       - npm install
+
   build:
     commands:
       - npm run build
@@ -13,3 +16,4 @@ artifacts:
     - dist/**/*
     - appspec.yml
     - scripts/**/*
+  discard-paths: no
