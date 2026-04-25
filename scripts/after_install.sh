@@ -1,3 +1,3 @@
 #!/bin/bash
-# Set correct permissions
-chmod -R 755 /var/www/html
+chmod -R 755 /usr/share/nginx/html
+systemctl restart nginx
